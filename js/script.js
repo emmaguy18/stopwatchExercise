@@ -42,27 +42,23 @@ $(document).ready(function(){
         seconds = 0;
       }
 
-
       console.log(seconds);
       //console.log('this is happening every 1 second');
-      $('#seconds').text(seconds) + '0';
-
-
+      $('#seconds').text(seconds) ;
+      $('#minutes').text(minutes) ;
+      console.log(minutes);
 
     }, 1000);
-
-
-
   });
 
 
 
 
 //stop button//
-  // $('#stopBtn').click(function(){
-  //   clearTimeout('#startBtn');
-  //   console.log('timeout has been cleared');
-  // }, 10000);
+  $('#stopBtn').click(function(){
+    clearTimeout('#startBtn');
+    console.log('timeout has been cleared');
+  });
 
 
 });
